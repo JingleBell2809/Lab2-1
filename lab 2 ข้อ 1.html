@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>lab 2 ข้อ 1</title>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <form action="form-echo.php" method="get">
+        <p><label>สาขาวิชา : </label>
+            <select name="dept">
+            <option value="">--Please choose an option--</option>
+            <option value="CS">CS : ภาควิชาวิทยาการคอมพิวเตอร์และสารสนเทศ</option>
+            <option value="IC">IC : ภาควิชาเคมีอุตสาหกรรม</option>
+            <option value="MA">MA : ภาควิชาคณิตศาสตร์</option>
+            <option value="IMI">IMI : ภาควิชาฟิสิกส์อุตสาหกรรมและอุปกรณ์การแพทย์</option>
+            <option value="AS">AS : ภาควิชาสถิติประยุกต์</option>
+            <option value="AFET">AFET : ภาควิชาเทคโนโลยีอุตสาหกรรมเกษตร อาหาร และสิ่งแวดล้อม</option>
+            </select>
+        <br><br>จำนวนเงินที่จะโอน :
+        <input type="text" name="จำนวนเงิน" placeholder="1,234.56" pattern="^[1-9]{1,3}(,[0-9]{3})*(\.[0-9]{2})?$" 
+        title="จำนวนเงินตั้งแต่ 1 ขึ้นไป หลักพันต้องมี , คั่นด้วย มีทศนิยมได้ 2 ตำแหน่ง">
+        <br><br>อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย :
+        <br> 1. <input type="text" name="อาหาารที่ชอบ" placeholder="อาหารที่ชอบมากอันดับ1" pattern="[a-zก-๏A-Z]+" title="ข้อความภาษาและภาษาอังกฤษเท่านั้น">
+        <br> 2. <input type="text" name="อาหาารที่ชอบ" placeholder="อาหารที่ชอบมากอันดับ2" pattern="[a-zก-๏A-Z]+" title="ข้อความภาษาและภาษาอังกฤษเท่านั้น">
+        <br> 3. <input type="text" name="อาหาารที่ชอบ" placeholder="อาหารที่ชอบมากอันดับ3" pattern="[a-zก-๏A-Z]+" title="ข้อความภาษาและภาษาอังกฤษเท่านั้น">
+        <br> 4. <input type="text" name="อาหาารที่ชอบ" placeholder="อาหารที่ชอบมากอันดับ4" pattern="[a-zก-๏A-Z]+" title="ข้อความภาษาและภาษาอังกฤษเท่านั้น">
+        <br> 5. <input type="text" name="อาหาารที่ชอบ" placeholder="อาหารที่ชอบมากอันดับ5" pattern="[a-zก-๏A-Z]+" title="ข้อความภาษาและภาษาอังกฤษเท่านั้น">
+        <br><br>ค่าไฟ 3 เดือนที่ผ่านมา :
+        <br> 1. <input type="text" name="ค่าไฟเดือนที่1" placeholder="ค่าไฟเดือนที่1" pattern="^[1-9]{1,3}(,[0-9]{3})*(\.[0-9]{2})?$" 
+        title="จำนวนเงินตั้งแต่ 1 ขึ้นไป หลักพันต้องมี , คั่นด้วย มีทศนิยมได้ 2 ตำแหน่ง">
+        <br> 2. <input type="text" name="ค่าไฟเดือนที่2" placeholder="ค่าไฟเดือนที่2" pattern="^[1-9]{1,3}(,[0-9]{3})*(\.[0-9]{2})?$" 
+        title="จำนวนเงินตั้งแต่ 1 ขึ้นไป หลักพันต้องมี , คั่นด้วย มีทศนิยมได้ 2 ตำแหน่ง">
+        <br> 3. <input type="text" name="ค่าไฟเดือนที่3" placeholder="ค่าไฟเดือนที่3" pattern="^[1-9]{1,3}(,[0-9]{3})*(\.[0-9]{2})?$" 
+        title="จำนวนเงินตั้งแต่ 1 ขึ้นไป หลักพันต้องมี , คั่นด้วย มีทศนิยมได้ 2 ตำแหน่ง">
+        <br><br>รหัสบัตรประชาชน : 
+        <input type="text" name="รหัสบัตรประชาชน" placeholder="x-xxxx-xxxxx-xx-x" pattern="[1-9]-[0-9]{4}-[0-9]{5}-[0-9]{2}-[0-9]" title="ใส่ตัวเลขจำนวน13ตัวเท่านั้น">
+        <br><br>ความพึงพอใจของหนังสือเล่มนี้ : 
+        <br><textarea cols='50' rows='5' placeholder="ความพึงพอใจของหนังสือเล่มนี้" ></textarea>
+        <br><br>อาการป่วย : 
+        <br><textarea cols='50' rows='5' placeholder="อาการป่วย" ></textarea>
+        <br><br>ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่ :    
+        <input type="radio" name="เคย">
+        เคย
+        <input type="radio" name="เคย">
+        ไม่เคย
+        <br><br>รหัสผ่าน : 
+        <input type="password" name="รหัสผ่าน" placeholder="********" minlength="8" title="ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป">
+        <br><br>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน :
+        <input type="time" name="เวลาเริ่มต้น"> - <input type="time" name="เวลาสิ้นสุด">
+        <br><br>วันเวลาที่ต้องไปพบแพทย์ : 
+        <input type="datetime-local" name="วันเวลาที่ต้องไปพบแพทย์">
+            <p><input type="submit" value="Submit">
+    </form>
+</body>
+</html>
